@@ -26,7 +26,7 @@ const App = () => {
     try {
       const response = await axios.get("https://api.getresponse.com/v3/custom-fields", {
         headers: {
-          Authorization: `Bearer ${apiKey}`,
+          "X-Auth-Token": `api-key ${apiKey}`,
           "Content-Type": "application/json",
         },
       });
